@@ -31,7 +31,7 @@
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: 2;
+  z-index: 3;
 }
 .birds {
   width: 200px;
