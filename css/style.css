@@ -1,7 +1,91 @@
 .anim-container {
-  width: 1300px;
+  width: 1400px;
   height:750px;
-  background-color: aqua;
+  background-image: url(../images/city.png);
+  background-position: center;
   margin: 0 auto;
   position: relative;
+  z-index: 3;
 }
+.cloud1 {
+  width: 400px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  animation-name: cloud-a;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  /* /* animation-direction: alternate-reverse; */
+  z-index: 2;
+}
+.plane2 {
+  width: 250px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  transform: rotate(-5deg);
+  opacity: 1;
+  animation-name: plane;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+.birds {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  animation-name: birds1;
+  animation-duration: 17s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.air-ballon {
+  width: 70px;
+  position: absolute;
+  left: 40px;
+  animation-name: ballon;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes cloud-a {
+  0% {left: 0px; top: 5px;}
+  25% {left: 200px; top: 5px;}
+  50% {left: 400px;}
+  75% {left: 600px;}
+  85% {left: 650px;}
+  95% {left: 750px;}
+  100% {left: 1000px;}
+}
+@keyframes plane {
+  0% {right: 0px;}
+  15% {right: 200px;}
+  25% {right: 400px;}
+  50% {right: 600px;}
+  75% {right: 800px; top: 10px;}
+  85% {right: 850px; top: 20px; transform: rotate(-5deg);}
+  90% {right: 950px;}
+  95% {right: 1100px; top: 30px; width: 300px;}
+  100% {right: 1200px; top: 50px; width: 300px;}
+}
+@keyframes birds1 {
+ 0%  {left: 0px; top:200px;}
+ 25% {left: 200px;}
+ 50% {left: 400px;}
+ 75% {left:600px; top: 300px;}
+ 100% {left: 800px; top: 100px; width: 50px;}
+}
+
+@keyframes ballon {
+  0%   {top: 0px;}
+  15%  {top: 50px}
+  25%  {top: 100px; left: 50px;}
+  50%  {top: 300px; width: 100px;}
+  75%  {top: 400px;}
+  100% {top: 550px; width: 150px;}  
+}
+
