@@ -71,7 +71,7 @@
   85% {right: 850px; top: 20px; transform: rotate(-5deg);}
   90% {right: 950px;}
   95% {right: 1100px; top: 30px; width: 300px;}
-  100% {right: 1200px; top: 50px; width: 300px;}
+  100% {right: 1120px; top: 50px; width: 300px;}
 }
 @keyframes birds1 {
  0%  {left: 0px; top:200px;}
